@@ -1,0 +1,75 @@
+[
+{
+    "name":"Bad Bunny: x100pre",
+    "price" : "$39.99",
+    "description": "2XLP Vinyl features two discs, with eight tracks on disc 1 and seven on disc 2, for a total of 15 tracks. Genre:Latin Trap/Reggaeton",
+    "photo":"images/TS4.jpeg"
+},
+{
+    "name":"SZA: Ctrl",
+    "price" : "$36.50",
+    "description": "2XLP Vinyl features two discs, with eight tracks on disc 1 and six on disc 2, for a total of 14 tracks. Genre: R&B",
+    "photo":"images/TS3.webp"
+},
+{
+    "name":"Tame Impala: Currents",
+    "price" : "$23.50",
+    "description": "2LP Vinyl features one disc, with a total of 13 tracks. Featuring hit Genre: Alternative",
+    "photo":"images/TS2.webp"
+},
+{
+    "name":"Harry Styles: Fine Line",
+    "price" : "$36.50",
+    "description": "Double 180 gm vinyl LP pressing including poster. Two discs with a total of 12 songs. Genre: Pop",
+    "photo":"images/TS1.webp"
+},
+{
+    "name":"Bad Bunny: Un Verano Sin Ti",
+    "price" : "$40.00",
+    "description": "Limited edition release. 2XLP Vinyl features two discs with a total of 23 tracks. Featuring hits “Moscow Mule” & “Efecto”. Genre: Reggaeton",
+    "photo":"images/verano.jpg"
+},
+{
+    "name":"Beyonce: Lemonade",
+    "price" : "$36.50",
+    "description": "Limited double 180gm yellow vinyl LP pressing. Two discs vinyl with a total of 12 tracks. Featuring hit “Formation”. Genre:R&B",
+    "photo":"images/TS6.webp"
+},
+{
+    "name":"Selena: One's",
+    "price" : "$36.50",
+    "description": "This limited edition 2-LP picture discs include a total 20 tracks. Featuring hits like “Amor Prohibido” & “Como La Flor”. Genre: Latin/Cumbia ",
+    "photo":"images/ones.jpg"
+},
+{
+    "name":"Ariana Grande: thank u, next",
+    "price" : "$36.50",
+    "description": "Limited edition clear vinyl features two discs, with twelve tracks. Featuring hits like “thank u, next” & “ghostin”. Genre: Pop ",
+    "photo":"images/ariana.jpg"
+},
+{
+    "name":"Adele: 25",
+    "price" : "$20.00",
+    "description": "LP Vinyl disc with a total of eleven tracks. Featuring hits like “Hello” & “Love in the dark” Genre: Pop/R&B",
+    "photo":"images/adele.jpg"
+},
+{
+    "name":"Audio-Technica LP60X-BT Bluetooth Record Player",
+    "price" : "$259.00",
+    "description": "Fully automatic, Bluetooth-enabled belt-driven turntable from Audio-Technica to keep your beats fresh and your hands free.",
+    "photo":"images/audio.webp"
+},
+{
+    "name":"Victrola Eastwood Bluetooth Record Player",
+    "price" : "$110.00",
+    "description": "Modern-meets-vintage aesthetics top this compact record player by Victrola. Dual Bluetooth connectivity enables you to stream from your digital device or connect your favorite external speaker wirelessly to enjoy every LP in your collection",
+    "photo":"images/victrola.webp"
+},
+{
+    "name":"Crosley Musician Entertainment Center",
+    "price" : "$200.00",
+    "description":"Analog styling blends with modern sound in this comprehensive entertainment center by Crosley. Featuring a 3-speed record player, CD player, cassette deck, AM/FM radio and Bluetooth-enabled wireless connection, this retro-cool cabinet is so versatile.",
+    "photo":"images/crosley.webp" 
+}
+
+]

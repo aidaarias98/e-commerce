@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  body {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: black; 
+  }
+
+/*js styling*/
+#output{
+    width:90vw;
+    background: red;
+    /*color:black;*/
+    display: grid;
+    grid-template-rows:auto;
+    grid-template-columns:.5fr 1fr .5fr 1fr;
+    grid-gap:20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#card{
+    background:white;
+    width:auto;
+    height:auto;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    box-shadow:5px 10px 8px black;
+}
+
+#card h2{
+    font-size: 30px;
+    margin: 10px;
+    font-family:'Gill Sans';
+
+}
+
+#card p{
+    font-size: 15px;
+    margin: 10px;
+    font-family:Verdana;
+    line-height: 20px;
+
+}
+
+#product-img img{
+    width: 100%;
+    margin: 25px; 
+    box-shadow:5px 5px 90px black;
+    transition: transform .2s;
+}
+
+#product-img img:hover{
+  transform: scale(1.3); 
+}
+
+#title{
+  color: white;
+  margin: 10px;
+}
+
+
+#add{
+    border: 4px solid black;
+    border-radius: 24px;
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color:red;
+    text-align: center;
+    cursor: pointer;
+}
+
+#add:hover{
+    background-color: black;
+    border: 4px solid red;
+}
+
+  /* HEADER & FOOTER*/
+  header a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+  }
+  
+  header {
+      background-color: white;
+      margin: none;
+  }
+  
+  header a:hover {
+      color:red;
+  }
+  
+  header, footer {
+      height: 100%;
+      margin: none;
+      padding: 20px 10px;
+  }
+  
+  #logo a{
+    color: black;
+  }
+  
+  #logo{
+      font-weight: bold;
+    color:black;
+      font-size: 2em;
+      width: 30%;
+      font-family: 'Cedarville Cursive', cursive;
+  }
+  
+  #logo a:hover {
+      color:red;
+  }
+  
+  ul {
+      list-style: none;
+      margin: none;
+      padding: none;
+  }
+  
+  header ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  footer {
+      background-color: white;
+      margin-top: 15px;
+  }
+  
+  footer a {
+      font-weight: bold;
+      color: black;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+      color: red;
+  }
+  
+  #socials img {
+      width: 20px;
+      object-fit: fill;
+  }
+
+  
+  #last {
+      background-color: black;
+      color: white;
+      margin: 20px 0 0 0;
+      padding: 10px;
+      width: 100%;
+  }
+
+  #payment{
+    position: relative;
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+  }
+
+
+  /*mobile media queries*/
+  @media screen and (min-width: 320px) and (max-width:480px) { 
+    
+  #output{  
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:10px;
+    padding: 10px;
+  }
+
+  #card{
+    margin: auto;
+}
+
+
+#product-img img{
+    width: 80%;
+    margin:20px;
+    margin-bottom: 1px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+
+#add{
+    border: 4px solid black;
+    width: 50%;
+    margin: 20px;
+    padding: 10px 25px;
+    color: white;
+}
+
+#logo{
+    display: block;
+    width: 100%;
+  }
+  
+  footer {
+    flex-direction: column;
+  }
+
+  footer a {
+    font-weight: bold;
+    color:black;
+  text-decoration: none;
+}
+
+  footer #socials {
+    margin-left: 10px;
+  } 
+
+  #last {
+    text-align: center;
+  }
+
+  #last li {
+    margin-left: 35px;
+  }
+  
+}
+
+
+/* Media Query Tablet  */
+@media  screen and (min-width: 481px) and (max-width:768px) {
+  #output{
+    width:auto;
+    display: grid;
+    grid-template-columns: repeat(2,4fr);
+    grid-gap:30px;
+    margin: 50px;
+    padding: 30px;  
+}
+
+#card{
+    background:white;
+    width:auto;
+    height: auto;
+    align-items: center;
+    margin: 20px;
+    padding: 10px; 
+}
+
+
+  header li {
+    padding: 5px;
+  }
+    
+  footer #socials {
+    margin-left: 40px;
+  }
+  
+    
+}

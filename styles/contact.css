@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  body {
+      text-align: center;
+      font-family: sans-serif;
+      background-color: white;
+    
+  }
+  
+  /* HEADER & FOOTER*/
+  header a {
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+  }
+  
+  header {
+      background-color: white;
+      margin: none;
+  }
+  
+  header a:hover {
+      color:red;
+  }
+  
+  header, footer {
+      height: 100%;
+      margin: none;
+      padding: 20px 10px;
+  }
+  
+  #logo a{
+    color: black;
+  }
+  
+  #logo{
+      font-weight: bold;
+    color:black;
+      font-size: 2em;
+      width: 30%;
+      font-family: 'Cedarville Cursive', cursive;
+  }
+  
+  #logo a:hover {
+      color:red;
+  }
+  
+  ul {
+      list-style: none;
+      margin: none;
+      padding: none;
+  }
+  
+  header ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  footer {
+      background-color: white;
+      margin-top: 15px;
+  }
+  
+  footer a {
+      font-weight: bold;
+      color:white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+      color: red;
+  }
+  
+  #socials img {
+      width: 20px;
+      object-fit: fill;
+  }
+  
+  #last {
+    background-color: black;
+    color: white;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#payment{
+  position: relative;
+  width: auto;
+  padding: 10px;
+  margin: 5px;
+}
+
+  
+  
+  /*Targeting the actual container*/
+  
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    padding: 50px 50px;
+  }
+  
+  /*after the container moves*/
+  .container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; background:url('/images/hero.webp')no-repeat center ;
+    background-size:cover;
+    z-index: -1;
+    filter:blur(3px);
+    
+  }
+  
+  .contact-box{
+    max-width: 850px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:rgba(0, 0, 0, 0.803);
+    border: 4px solid white;
+    
+  }
+  
+  .left{
+    height: 100%;
+    background: url('/images/heart.png') no-repeat center;
+    background-size: cover;
+  }
+  
+  .right{
+     padding: 25px 40px;
+  }
+  
+  label{
+      position:absolute;
+      left:0;
+      top: 0;
+      padding: 10px;
+      color:black;
+      cursor: text;
+      transition: 0.2s;
+    }
+  
+     .input{
+       margin-bottom: 5px;
+       position: relative;
+     }
+  
+    input,textarea, select {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 2px solid white;
+      border-radius: 5px;
+      box-sizing: border-box;
+      resize: vertical;/* Allow the user to vertically resize the textarea (not horizontally)*/
+      font-size: 15px;
+    }
+  
+  h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius:2px;
+    background-color: white;
+  }
+  
+  .btn{
+    width: 100px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color:white;
+    cursor:pointer;
+    outline: none;
+    border: none;
+    color: black;
+    transition: .5s;
+    
+  }
+  
+  .btn:hover{
+    background-color: red;
+  }
+  
+  /*when form labels are clicked*/
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+      top: -35px;
+      font-size: 14px;
+      color:white;
+
+    }
+  
+  
+  
+  /* Mobile Media Query */
+  @media screen and (min-width: 320px) and (max-width:480px) { 
+    
+    .container{
+     flex-direction: column; 
+    }
+    
+    .contact-box{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .left{
+      height: 200px;
+    }
+    
+    label,input,textarea, select{
+    font-size: 10px; 
+    }
+  
+    input:focus~label,
+    input:valid~label,
+    textarea:focus~label,
+    textarea:valid~label{
+        top: -25px;
+        font-size: 8px;
+    }
+    
+    #logo{
+      display: block;
+      width: 100%;
+    }
+    
+    footer {
+      flex-direction: column;
+    }
+  
+   
+  
+    footer ul {
+      display: inline-block;
+    }
+
+    footer a {
+      font-weight: bold;
+      color:white;
+    text-decoration: none;
+  }
+  
+    footer ul li {
+      padding: 15px;
+    }
+  
+    footer #socials {
+      margin-left: 10px;
+    } 
+  
+    #last {
+      text-align: center;
+    }
+  
+    #last li {
+      margin-left: 35px;
+    }
+    
+  }
+  
+  
+  /* Media Query Tablet  */
+  @media  screen and (min-width: 481px) and (max-width:768px) {
+    
+  .contact-box{
+      display: grid;
+      grid-template-columns: 1/3fr;
+    }
+    
+    header li {
+      padding: 5px;
+    }
+      
+    footer #socials {
+      margin-left: 40px;
+    }
+    footer ul {
+      display: inline-block;
+    }
+  
+    footer ul li {
+      padding: 15px;
+    }
+  
+      
+  }
+
+
+

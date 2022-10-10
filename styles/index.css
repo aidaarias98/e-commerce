@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+  
+  body {
+      text-align: center;
+      font-family: sans-serif;
+      /* background-color: #1C3879;  #f8f8f8b0;*/
+      background: black;
+    
+  }
+  
+  /* HEADER & FOOTER*/
+  header a {
+   
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+  }
+  
+  header {
+      background-color: white;
+      margin: none;
+  }
+  
+  header a:hover {
+      color:red;
+  }
+  
+  header, footer {
+      height: 100%;
+      margin: none;
+      padding: 20px 10px;
+  }
+  
+  #logo a{
+    color: black;
+  }
+  
+  #logo{
+      font-weight: bold;
+    color:black;
+      font-size: 2em;
+      width: 30%;
+      font-family: 'Cedarville Cursive', cursive;
+  }
+  
+  #logo a:hover {
+      color:red;
+  }
+  
+  ul {
+      list-style: none;
+      margin: none;
+      padding: none;
+  }
+  
+  header ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+  }
+  
+  footer {
+      background-color: white;
+      margin-top: 15px;
+  }
+  
+  footer a {
+      font-weight: bold;
+      color:black;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+      color: red;
+  }
+  
+  #socials img {
+      width: 20px;
+      object-fit: fill;
+  }
+
+  #payment{
+    position: relative;
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  #last {
+      background-color: black;
+      color: white;
+      margin: 20px 0 0 0;
+      padding: 10px;
+      width: 100%;
+  }
+
+  /*hero image*/
+
+  .hero{
+    height:100vh;
+      }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero.webp");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 10px ;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .hero-header{
+    font-size: 100px;
+  }
+
+  .hero-par{
+    font-size: 30px;
+  }
+  .btn {
+    border: 5px solid white;
+    border-radius: 24px;
+    display: inline-block;
+    width: 30%;
+    font-size: 16px;
+    margin: 40px;
+    padding: 10px 25px;
+    color: white;
+    background-color:black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: red;
+    color: white;
+  }
+
+  /*Top sellers header banner*/
+  .header2 {
+    padding: 50px;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+    line-height: 60px;
+    margin-top: -30px;
+  }
+
+  hr{
+    border-top: 2px solid white;
+    width: auto;
+  }
+
+  /*topseller grid only want it to display for mobile*/
+  .topsellers{
+   display:none;
+  }
+  
+ /*flex box topsellers*/
+.flex-container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 25px 50px 25px;
+}
+
+.flex-box{
+    width: 300px;
+    height:250px;
+    background: linear-gradient(purple,red,black);
+    color: white;
+    font-size: 20px;
+    text-align:center;
+    line-height: 28px;
+    border-radius: 20px;
+    margin:20px;
+    padding: 20px;
+}
+
+.flex-box img{
+  width:65%;
+
+}
+
+
+/* Slideshow container */
+.slideshow-container img{
+  width:50%;
+  height:30%;
+}
+
+  .about-title{
+    font-size: 50px;
+    font-family:'Cedarville Cursive', cursive;
+    color: white;
+  }
+
+  .about-par{
+    font-size: 20px;
+    margin-top: -50px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+/*Hours of Operations*/
+.Hoo{
+    font-family:'Cedarville Cursive', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+.left-map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.map-text{
+    font-size: 20px;
+    margin: 60px;
+    line-height:40px;
+    color: white;
+}
+
+
+    /* Mobile Media Query */
+   @media screen and (min-width: 320px) and (max-width:480px) { 
+     /*hero image*/
+     .hero{
+        height:60vh;
+          }
+    
+      .hero-image {
+        height: 55vh;
+        margin:0 10 0;
+      }
+
+      .hero-text {
+        position: relative;
+        top: 60%;
+        left: 50%;
+      }
+
+      .hero-header{
+        font-size: 25px;
+      }
+
+      .hero-par{
+        font-size: 12px;
+      }
+      
+      .btn {
+        border: 2px solid white;
+        border-radius: 15px;
+        width: 35%;
+        font-size: 10px;
+        margin: 30px;
+        padding: 5px 5px;
+      }
+      
+      /*top seller flexbox section*/
+    .flex-box{
+      display: none;
+    }
+
+    /*MAP-Hours of Operation*/
+    .left-map{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map{
+        width: 300px;
+        height: 200px;
+        position: relative;
+    }
+
+    .Hoo{
+        font-size: 20px;
+    }
+    
+    .map-text{
+        font-size: 10px;
+        margin: 20px;
+        line-height:20px;
+    }
+
+    /* /*this is for the the topseller picture grid */
+    .topseller-container {
+        background:linear-gradient(purple,red,black);
+        margin: 20px ;
+        padding: 15px;
+        color: white;
+       }
+    
+      .topsellers {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap:10px;
+        }
+        .TSdiv1 { grid-area: 1 / 1 / 2 / 2; }
+        .TSdiv2 { grid-area: 1 / 2 / 2 / 3; }
+        .TSdiv3 { grid-area: 1 / 3 / 2 / 4; }
+        .TSdiv4 { grid-area: 2 / 1 / 3 / 2; }
+        .TSdiv5 { grid-area: 2 / 2 / 3 / 3; }
+        .TSdiv6 { grid-area: 2 / 3 / 3 / 4; }
+
+        .topsellers img{
+            width: 70px;
+        }
+        .topsellers p{
+            font-size: 10px;
+        }
+
+    /*header banner*/
+    .header2 {
+        padding: 25px;
+        margin-top:-5px;
+        font-size: 10px;
+        line-height: 20px;
+      }
+
+      /*slider images*/
+      .slideshow-container img{
+        width:90%;
+        height:45%;
+      }
+      
+      .about-title{
+        font-size: 30px;
+       
+        }
+      
+        .about-par{
+          font-size: 15px;
+          margin-top: -25px;
+          padding: 20px;
+          line-height: 15px;
+        }
+      
+
+   /*this is for the footer and header*/
+   header{
+    font-size:12px ;
+   }
+  
+    #logo{
+      display: block;
+      width: 100%;
+    }
+    
+    footer {
+      margin-right: -20px;
+    }
+
+    footer #socials {
+      margin-left: 10px;
+      padding: 10px;
+    } 
+  
+    #last {
+      text-align: center;
+    }
+  
+    #last li {
+      margin-left: 35px;
+    }
+    
+  }
+  
+  
+  /* Media Query Tablet  */
+  @media  screen and (min-width: 481px) and (max-width:768px) {
+   
+/*Hero Image*/
+    .hero{
+      height:65vh;
+        }
+  
+    .hero-image {
+      height: 60vh;
+      margin:0 10 0;
+    }
+
+    .hero-text {
+      position: relative;
+      top: 60%;
+      left: 50%;
+
+    }
+
+    .hero-header{
+      font-size: 45px;
+    }
+
+    .hero-par{
+      font-size: 20px;
+    }
+    
+    .btn{
+      width: 25%;
+      font-size: 16px;
+      margin: 30px;
+    }
+    
+    
+    .header2 {
+      padding: 25px;
+      margin-top:5px;
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+
+    /*top seller flexbox section*/
+  .flex-box{
+      margin:10px;
+  }
+
+  /*slider images*/
+  .slideshow-container img{
+    width:80%;
+    height:45%;
+  }
+  
+ 
+  /*MAP-Hours of Operation*/
+  .left-map{
+      display: flex;
+      flex-direction: column;
+  }
+
+    /*this is for the footer and header*/
+    header li {
+      padding: 5px;
+    }
+      
+    footer #socials {
+      margin-left: 40px;
+    }
+    
+      
+  }
