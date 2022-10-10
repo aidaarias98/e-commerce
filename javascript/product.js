@@ -3,7 +3,7 @@ fetch("product.json") //fetching our actual json file
 .then((data) => getProducts(data));
 
 function getProducts(data){
-   let output = ''; //for the array
+   let output = ''; //setting it an empty array
 
    data.forEach((product) =>{ //basically looping through the json array
     output+= `             

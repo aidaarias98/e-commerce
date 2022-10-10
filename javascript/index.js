@@ -12,10 +12,11 @@ images [3] = 'images/heart.webp';
 function changePhoto(){
   document.slide.src = images[i]; // its pulling the class from html (slide.src) set it equal to first image
 
-  if (i < images.length-1){  //this if statement basically makes the images run in a loop
+//this if statement basically makes the images run in a loop
+  if (i < images.length-1){  //-1 bc its an index of 3 but theres really 4
     i++;
   }else{
-    i = 0;
+    i = 0;//if at last index set to 0
   }
   setTimeout("changePhoto()", 2500); //timer  to run it every 2.5sec
 }
